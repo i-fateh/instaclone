@@ -1,0 +1,363 @@
+/* MESSAGE AUX RECRUTEURS :)
+    Ce code a été ecris il y a déja quelques années
+    Je le laisse dans l'état afin de garder une trace de mes progrès
+*/
+
+body {
+    margin: 0 auto;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    background: rgb(240, 240, 240);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.desc {
+    position: absolute; top: 0px; text-align: center;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(213,213,213);
+    background: linear-gradient(153deg, rgba(213,213,213,1) 0%, rgb(240, 240, 240) 100%, rgb(235, 235, 235) 100%);
+    flex-direction: column;
+}
+
+.bloc {
+    background: rgb(255, 255, 255);
+    width: 400px;
+    height: 686px;
+    overflow-y:auto;
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+
+.bloc img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0 0px 0;
+}
+
+
+.head {
+    height: 52px;
+    width: 386px;
+    padding-top: 7px;
+    padding-left: 14px;
+    background: rgb(242, 242, 242);
+    border-radius: 13px 13px 0 0;
+    border-bottom: 2px solid rgb(223, 223, 223);
+    display: flex;
+    align-items: center;
+}
+
+.insta {
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 3px;
+    width: 100px !important;
+}
+.insta2 {
+    width: 40px !important;
+    margin-right: 5px;
+    padding-bottom: 3px;
+}
+.insta3 {
+    width: 30px !important;
+    margin-left:110px ;
+    padding-bottom: 3px;
+}
+
+.insta4 {
+    width: 30px !important;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 3px;
+}
+
+.foot {
+    height: 60px;
+    width: 400px;
+    background: rgb(242, 242, 242);
+    border-radius: 0 0 13px 13px;
+    border-top: 2px solid rgb(223, 223, 223);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.foot img {
+    width: 28px;
+}
+
+.cercle {
+    width: 380px !important;
+    height: 105px !important;
+    margin: 0 auto;
+    padding: 10px 10px 5px 10px;
+    white-space:nowrap;
+    overflow-x:auto;
+    scrollbar-width: none;
+    z-index: 99;
+}
+
+.avatar {
+    width: 65px !important;
+    height: 65px !important;
+    margin: 5px !important;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 3px rgba(255, 15, 99, 0.742);
+}
+
+.account-avatar {
+    width: 65px !important;
+    height: 65px !important;
+    margin: 5px !important;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.pin {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.label-pin {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.7em;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+    margin-top: -5px;
+}
+
+.account {
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.img-profile {
+    border-radius: 50%;
+    width: 35px !important;
+    height: 35px !important;
+    margin: 10px !important;
+    border: 1px solid #fff;
+    box-shadow: 0 0 0 2px rgba(255, 15, 99, 0.742);
+    display: inline-block;
+}
+
+.label {
+    display: inline-block;
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-weight:500;
+    color: black;
+}
+
+.points {
+    width: 20px !important;
+    margin-left: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.soc1 {margin-right: 10px !important; margin-left: 13px !important; width: 30px !important; display: inline-block;}
+.soc2 {margin-right: 10px !important; margin-left: 5px !important; width: 27px !important; display: inline-block;}
+.soc3 {margin-right: 10px !important; margin-left: 5px !important; width: 27px !important; display: inline-block;}
+.soc4 {margin-right: 20px !important; margin-left: 220px !important; width: 33px !important; display: inline-block;}
+
+.like {
+    padding-left: 13px;
+    margin-top: -5px;
+}
+
+.like p {
+    font-size: 1em;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.like .com {
+    font-size: 0.9em;
+    margin-top: -10px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    display: block;
+}
+
+.like .mess {
+    font-size: 0.8em;
+    margin-top: -10px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+}
+
+.like .suite {
+    color: gray;
+    font-size: 0.8em;
+    margin-top: -10px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+}
+
+.like .time {
+    color: gray;
+    font-size: 0.6em;
+    margin-top: -7px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+}
+
+.like .trad {
+    color: black;
+    font-size: 0.6em;
+    margin-top: -7px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+}
+
+.like .commentaires {
+    color: gray;
+    font-size: 0.8em;
+    margin-top: 3px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+}
+
+.suite:hover, .commentaires:hover {
+    color: rgb(154, 153, 153);
+}
+
+.ajout-commentaire {
+    display: flex;
+    align-items: center;
+    margin-top: -5px;
+}
+
+.ajout-commentaire .img-account {
+    display: inline-block;
+    width: 30px !important;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-right: 8px;
+}
+
+.ajout-commentaire .add-com {
+    color: gray;
+    font-size: 0.8em;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+}
+
+.promo {
+    width: 100%;
+    height: 290px;
+    padding-bottom: 10px;
+}
+
+.promo-label {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: -26px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.une-scroll {
+    height: 290px;
+    white-space:nowrap;
+    overflow-x:auto;
+    scrollbar-width: none;
+    padding: 10px;
+}
+
+.one-box {
+    width: 32% !important;
+    border-radius: 5px;
+    padding: 0px 2px 10px 2px;
+    display: inline-block;
+}
+
+.img-box {
+    border-radius: 5px;
+    width: 100% !important;
+    height: 220px !important;
+}
+
+.one-label {
+    text-align: center;
+    font-size: 0.7em;
+    margin-top: -23px;
+    font-weight: 400;
+    color: white;
+    z-index: 99;
+}
+
+.one-avatar {
+    margin-bottom: 22px !important;
+    margin-left: -92px !important;
+    width: 55px !important;
+    height: 55px !important;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px rgba(255, 15, 99, 0.742);
+    position: relative;
+    z-index: 99 !important;
+    background: yellow;
+}
+
+.slider {
+    width: 100%;
+    white-space:nowrap;
+    overflow-x:auto;
+    scrollbar-width: none;
+}
+
+.warning{
+    display: none;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+    body {
+        flex-direction: column;
+        padding: 0px !important; margin: 0px !important;
+    }
+    .warning {
+        display: block;
+        position: absolute;
+        bottom: 0px !important;
+        background-color: rgb(255, 217, 0);
+        width: 98vw; height: auto; padding: 20px 0px;
+        font-size: 2em; text-align: center;
+    }
+}
